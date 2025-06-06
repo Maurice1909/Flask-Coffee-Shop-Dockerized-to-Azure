@@ -28,3 +28,60 @@ Initially conceived as a simple console-based interactive script, this project h
     * **Continuous Integration:** Every push to the `main` branch automatically triggers a build of the Docker image.
     * **Continuous Deployment:** The newly built image is automatically pushed to Azure Container Registry and deployed to Azure App Service.
 * **Cloud Deployment:** Hosted on Azure App Service for Containers, providing a scalable and managed environment.
+
+## 🏗️ Project Structure
+
+The repository is structured as follows:
+
+## 🚀 Getting Started (Local Development)
+
+To run and test the Coffee Shop App on your local machine:
+
+### Prerequisites
+
+* Python 3.8+
+* Git
+* Docker Desktop (for running the Dockerized version)
+* `pip` (Python package installer)
+
+### 1. Clone the Repository
+
+```bash
+  git clone https://github.com/Maurice1909/Flask-Coffee-Shop-Dockerized-to-Azure.git
+```
+### 2. Set up a virtual environment in Python
+```python3 -m venv venv
+# On macOS/Linux: source venv/bin/activate
+
+# On Windows (Command Prompt): venv\Scripts\activate.bat
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4.Run flask app locally
+
+```bash
+python app.py
+# Set a different port if 5000 is in use
+```
+Open your web browser and navigate to http://127.0.0.1:5000/ (or the port you specified).
+
+
+### 5.Run the Dockerized app locally (Optional)
+
+#Build the Docker image
+
+```bash
+#Build the Docker image
+docker build -t bigmo-coffee-app .
+
+# Run the Docker container, mapping host port 8000 to container port 8000 (as exposed by Gunicorn)
+docker run -p 8000:8000 bigmo-coffee-app
+```
+
+Open your web browser and navigate to http://localhost:8000/
+
