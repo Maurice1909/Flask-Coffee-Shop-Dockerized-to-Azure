@@ -2,7 +2,7 @@
 
 A simple, interactive coffee ordering web application built with Python Flask, Dockerized, and deployed to Azure App Service using GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
 
-<img src="images/flowchart.png" alt="CI/CD Pipeline Flowchart showing code push, Docker build, ACR, and Azure App Service deployment" width="700" height="300"/>
+<img src="images/flowchart2.png" alt="CI/CD Pipeline Flowchart showing code push, Docker build, ACR, and Azure App Service deployment" width="700" height="300"/>
 ---
 
 ## ✨ Introduction
